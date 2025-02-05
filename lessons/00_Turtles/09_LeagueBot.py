@@ -9,12 +9,26 @@ Write your own turtle program! Here is what your program should do
 
 """
 
-import turtle as turtle
 
+import turtle as turtle
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor('white')
 
+
+def set_turtle_image(turtle, image_name):
+    """Set the turtle's shape to a custom image."""
+
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
+
 t = turtle.Turtle()
 
-... # Your Code Here
+set_turtle_image(t, 'leaguebot_bolt.gif')
+
+turtle.exitonclick()
