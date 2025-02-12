@@ -22,9 +22,9 @@ tina.shape('turtle')                    # Set the shape of the turtle to a turtl
 tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
 
 
-forwards = [ ... ]
-lefts = [ ... ]
-colors = [  ... ]
+forwards = [50]
+lefts = [90]
+colors = [""]
 
 for  i in range(8):
 
