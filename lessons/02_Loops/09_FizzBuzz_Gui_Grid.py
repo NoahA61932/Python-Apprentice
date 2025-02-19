@@ -33,6 +33,8 @@ app = App("Numbers Grid", layout="grid")
 
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
+ # Change only this line
+    # Don't change anything below this line
 
 # In the loop, calculate or increment the number
 
